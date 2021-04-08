@@ -26,8 +26,8 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
 
-    - name: Build and Push Docker Image
-      uses: mr-smithers-excellent/docker-build-push@v4
+    - name: Build and push Docker images
+      uses: docker/build-push-action@v2.4.0
       with:
         image: josea4718/actividad-1
         registry: docker.io
